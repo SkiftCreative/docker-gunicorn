@@ -10,10 +10,10 @@ WORKDIR /deploy/app
 
 # add the gunicorn config file, you should override this file
 # if you need custom gunicorn settings
-COPY gunicorn/gunicorn_config.py /deploy
+COPY gunicorn_config.py /deploy
 
 # add gunicorn config
-COPY supervisor/gunicorn.conf /etc/supervisor/conf.d/
+COPY gunicorn.conf /etc/supervisor/conf.d/
 
 # by default gunicorn will listen on :5000 so make it available
 EXPOSE 5000
