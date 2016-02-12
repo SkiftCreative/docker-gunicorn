@@ -10,7 +10,7 @@ WORKDIR /deploy/app
 
 # add the gunicorn config file, you should override this file
 # if you need custom gunicorn settings
-COPY gunicorn_config.py /deploy
+COPY gunicorn_config.py /deploy/
 
 # add gunicorn config
 COPY gunicorn.conf /etc/supervisor/conf.d/
