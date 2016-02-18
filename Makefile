@@ -2,7 +2,7 @@ NAMESPACE=skiftcreative
 APP=gunicorn
 
 build:
-	docker build -t ${NAMESPACE}/${APP} .
+	docker build --no-cache=true -t ${NAMESPACE}/${APP} .
 #
 #  You could use a completely different image to debug; maybe one with your
 #  favorite tools already present:
