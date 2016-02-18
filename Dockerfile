@@ -12,7 +12,7 @@ WORKDIR /deploy/app
 COPY gunicorn_config.py /deploy/
 
 # add gunicorn config
-COPY gunicorn.conf /etc/supervisor/conf.d/
+COPY supervisord.conf /etc/supervisord.conf
 
 # by default gunicorn will listen on :5000 so make it available
 EXPOSE 5000
