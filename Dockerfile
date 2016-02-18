@@ -2,7 +2,6 @@ FROM skiftcreative/supervisor:latest
 
 MAINTAINER Shawn McElroy <shawn@skift.io>
 
-RUN pip3 install -U pip
 RUN pip3 install -U gunicorn \
     && mkdir -p /deploy/app /deploy/run
 
