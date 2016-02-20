@@ -1,4 +1,4 @@
-FROM skiftcreative/supervisor:latest
+FROM skiftcreative/supervisor:3.5
 
 MAINTAINER Shawn McElroy <shawn@skift.io>
 
