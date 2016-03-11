@@ -1,11 +1,11 @@
 NAMESPACE=skiftcreative
 APP=gunicorn
-TAG=3.5
+TAG=3.3
 
 build:
-	cd ${TAG} && docker build --no-cache=true -t ${NAMESPACE}/${APP}:${TAG} .
+	docker build --no-cache=true -t ${NAMESPACE}/${APP}:${TAG} .
 run:
-	cd ${TAG} && docker run --name=${APP} --detach=true ${NAMESPACE}/${APP}:${TAG}
+	cdocker run --name=${APP} --detach=true ${NAMESPACE}/${APP}:${TAG}
 clean:
 	docker stop ${APP} && docker rm ${APP}
 reset: clean
